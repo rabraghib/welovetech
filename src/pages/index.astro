@@ -1,0 +1,50 @@
+---
+import Logo from '../components/home/Logo.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="WeLoveTech💙 Community!">
+  <main class="py-8">
+    <section class="text-center p-8 max-w-screen-lg mx-auto">
+      <div class="w-40 md:w-64 mx-auto">
+        <Logo />
+      </div>
+      <h1
+        class="font-semibold text-4xl leading-[3rem] md:text-6xl md:leading-[5rem]"
+      >
+        Moroccan Community <br />
+        for every <span class="text-blue-700 font-mono">poveri</span> who love Tech!
+      </h1>
+      <video
+        controls
+        autoplay
+        class="mt-12 w-full aspect-video rounded-lg shadow-lg"
+      >
+        <source src="/introducing-welovetech.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <section class="py-16 px-8 max-w-screen-lg mx-auto">
+      <div
+        class="p-10 rounded-2xl bg-gradient-to-r from-indigo-700 to-blue-600 flex items-center justify-between flex-col lg:flex-row gap-5"
+      >
+        <div class="block text-center lg:text-left">
+          <h2
+            class="font-manrope text-3xl text-white font-semibold mb-5 lg:mb-2"
+          >
+            Join us!
+          </h2>
+          <p class="text-xl text-blue-200">
+            Join our community and start learning, sharing, and growing with us!
+          </p>
+        </div>
+        <a
+          target="_blank"
+          href="https://discord.gg/N4c2mCku"
+          class="flex items-center bg-white rounded-full shadow-sm text-base text-blue-600 font-semibold py-3 px-6 text-nowrap hover:bg-blue-50"
+        >
+          Our Discord
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

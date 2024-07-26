@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta property="og:url" content="https://welovetech.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:site" content="@welovetechma" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="og:site_name" content="WeLoveTech" />
+    <meta
+      name="description"
+      property="og:description"
+      content="Moroccan Community for all Poveria who love Tech!"
+    />
+    <meta
+      name="keywords"
+      content="WeLoveTech, tech, community, Morocco, programming, coding, software, development, web, design, development, innovation, knowledge, sharing, support"
+    />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-full bg-slate-50">
+    <slot />
+  </body>
+</html>
+
+<style is:global></style>
